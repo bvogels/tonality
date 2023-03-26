@@ -1,0 +1,64 @@
+g16 fis g8~ g16 d e fis g a h cis
+d16 cis d8~ d16 a h cis d e fis d
+g16 fis g8~ g16 fis e d cis e a, g
+fis16 e d cis d fis \clef bass a, g fis a d,8
+\clef treble r8 d''16 c d8 g, h, d'
+r8 e16 d e8 a, c, e'
+r8 fis16 e fis8 d a' c,~
+c8 h r16 g h d g d g a
+h16 g d h g h d g h g fis e
+a16 e cis a fis a cis e a fis e d
+g16 d h g e g h d g fis e d
+cis16 g e cis a cis e g cis e d cis
+d8 fis,, fis  a' d fis
+h,8 g, g h' e g
+cis,16 e a, g fis a d fis g e d cis
+fis16 d cis h a g fis e d4
+fis'16 g a8~ a16 h a g fis e d c
+h16 c d8~ d16 e d c h a g fis
+e16 gis a h a e a h c a dis e
+fis16 e dis cis h2~
+h16 dis e8~ e16 dis, e8~ e16 \staffDown dis, e8 \staffUp
+\clef treble r16 gis'' a8~ a16 gis, a8~ a16 gis, a8~
+a16 h c fis h, dis e g fis e dis a'
+g16 fis e dis e g h, a g h e,8
+r8 e'' c e a a,
+r8 d h d g g,
+c16 a e c a c e a c a c e
+fis16 c a fis d fis a c fis c fis a
+h16 g d h g h d g h f h d
+e,16 d' c e, d c' h d, c e fis g
+a16 c, h a h d h g c a g fis
+h16 g fis e d c h a g4
+g8[ h'16 a h8 g g, g']
+fis,8[ fis'16 e fis8 d fis, d']
+e,8[ e'16 d e8 g a, cis']
+d,8[ fis16 e fis8 d] d, r16 c'
+h16 a h8~ h16 d e fis g a h g
+c,16 h c8~ c16 e fis g a h c a
+d,16 cis d8~ d16 a' h c d e fis d
+g16 fis g d h d g, h d, g h, d
+g,8[ g'] h[ g] g,[ g']
+fis,8 fis' a fis fis, fis'
+e,8 e' g e e, g'
+a,8 e' g e a, g'
+fis16 a d fis a fis d a fis a d, fis
+g16 h d g h g d h g h e, g
+a8[ cis] d16[ a fis d] a'8[ a,]
+d,16 d' e fis g a h cis d4
+d,,8[ fis'16 e fis8 d d, fis']
+g,8[ h'16 a h8 g g, h']
+c,8[ c'16 h c8 fis, a c]
+a8 fis dis16 h dis fis \clef treble h dis fis a
+g8.[ fis16] g8.[ \clef bass fis,16] g8.[ h,16]
+c8.[ \clef treble h''16] c8.[ \clef bass h,16] c8.[ e,16]
+dis8 a' g ais, h fis'
+e8[ g16 fis g8 e] e, r16 d'
+c16 e a c e c a e c e d c
+h16 d g h d h g d h d c h
+a8 c e g fis e
+d8 fis a c h a
+g8 h d f e d
+c8 e fis gis a g
+fis8 d g g, d' d,
+g16 g, a h c d e fis g4
