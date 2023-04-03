@@ -43,9 +43,6 @@ def accidentals_per_bar(score):
                     chromatic_degree += sharps.index(transposed_pitch) + 1
         degrees.append(chromatic_degree)
     accidentals.append(degrees)
-    # for index, b in enumerate(degrees):
-    #    print("{}: {}".format(index+1, b))
-
 
 def plots():
     plt.plot(accidentals[0], label="Var. 1")
@@ -59,7 +56,7 @@ def plots():
 
 
 def make_image():
-    img = np.empty((32, 32, 3), dtype=np.int64)
+    img = np.empty((32, 32, 3), dtype=np.uint8)
     img.fill(255)
     divisor = int(255 / max(accidentals[0]))
     print(img.ndim)
@@ -68,8 +65,10 @@ def make_image():
             pixel[1] = accidentals[0][index] * divisor
             pixel[2] = 0
 
+    img = img.repeat(10, axis=0).repeat(10, axis=1)
     imshow(img, interpolation="nearest")
     show()
+    plt.imsave("var2.png", img)
 
 
 def clean(bar):
@@ -80,8 +79,8 @@ def clean(bar):
 
 
 if __name__ == "__main__":
-    goldberg_variationen = ["var2"]
+    goldberg_variationen = ["var1", "var2"]
     for var in goldberg_variationen:
         load(var)
-    # plots()
-    make_image()
+    plots()
+    #make_image()
