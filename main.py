@@ -17,13 +17,11 @@ def load(var):
     score = []
     with open(var, "r") as variation:
         bars = variation.readlines()
-        print(len(bars))
         for index, bar in enumerate(bars):
             if index == len(bars) / 2:
                 break
-            b = [clean(bar.strip("\n")), clean(bars[index + 32].strip("\n"))]
+            b = [clean(bar.strip("\n")), clean(bars[index + (len(bars)//2)].strip("\n"))]
             score.append(b[0] + b[1])
-    # print(len(score))
     accidentals_per_bar(score)
 
 
@@ -44,9 +42,11 @@ def accidentals_per_bar(score):
         degrees.append(chromatic_degree)
     accidentals.append(degrees)
 
+
 def plots():
     plt.plot(accidentals[0], label="Var. 1")
     plt.plot(accidentals[1], label="Var. 2")
+    plt.plot(accidentals[2], label="Var. 4")
     plt.legend(loc="upper left")
     plt.xticks(np.arange(len(accidentals[1])), np.arange(1, len(accidentals[1]) + 1))
     plt.xlabel("Takt")
@@ -55,8 +55,8 @@ def plots():
     plt.show()
 
 
-def make_image():
-    img = np.empty((32, 32, 3), dtype=np.uint8)
+def make_image(nbars):
+    img = np.empty((nbars, nbars, 3), dtype=np.uint8)
     img.fill(255)
     divisor = int(255 / max(accidentals[0]))
     print(img.ndim)
@@ -68,7 +68,7 @@ def make_image():
     img = img.repeat(10, axis=0).repeat(10, axis=1)
     imshow(img, interpolation="nearest")
     show()
-    plt.imsave("var2.png", img)
+    plt.imsave("var4.png", img)
 
 
 def clean(bar):
@@ -79,8 +79,9 @@ def clean(bar):
 
 
 if __name__ == "__main__":
-    goldberg_variationen = ["var1", "var2"]
+    number_of_bars = 34
+    goldberg_variationen = ["var1", "var2", "var4"]
     for var in goldberg_variationen:
         load(var)
     plots()
-    #make_image()
+    #make_image(number_of_bars)
